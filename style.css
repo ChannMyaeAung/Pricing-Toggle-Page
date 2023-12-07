@@ -1,0 +1,23 @@
+:root {
+  --primary-linearGradient: ();
+  --very-lightGrayishBlue: hsl(240, 78%, 98%);
+  --light-grayishBlue: hsl(234, 14%, 74%);
+  --grayishBlue: hsl(233, 13%, 49%);
+  --dark-grayishBlue: hsl(232, 13%, 33%);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  font-size: 15px;
+}
