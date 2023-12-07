@@ -2,13 +2,71 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/favicon.png" />
+    <link rel="icon" type="image/svg+xml+png" href="/favicon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Pricing Table</title>
   </head>
   <body>
-    <div id="app">
-      <h1>Hello</h1>
+    <div class="container">
+      <h1 class="container__heading">Our Pricing</h1>
+
+      <div class="toggle-container">
+        <span>Annually</span>
+        <span>
+          <label for="toggle"></label>
+          <input type="checkbox" name="toggle" id="toggle" />
+        </span>
+        <span>Monthly</span>
+      </div>
+
+      <div class="prices__box_container">
+        <!-- Basic Price Box -->
+        <div class="prices__box_basic box">
+          <h2>Basic</h2>
+
+          <h3><span style="font-size: 28px">$</span>19.99</h3>
+          <hr />
+          <p>500 GB Storage</p>
+          <hr />
+          <p>2 Users Allowed</p>
+          <hr />
+          <p>Send up to 3 GB</p>
+          <hr />
+
+          <button class="learnmore-btn">Learn More</button>
+        </div>
+
+        <!-- Professional Price Box -->
+        <div class="prices__box_professional box">
+          <h2>Basic</h2>
+
+          <h3><span style="font-size: 28px">$</span>19.99</h3>
+          <hr />
+          <p>500 GB Storage</p>
+          <hr />
+          <p>2 Users Allowed</p>
+          <hr />
+          <p>Send up to 3 GB</p>
+          <hr />
+
+          <button class="learnmore-btn professional-btn">Learn More</button>
+        </div>
+
+        <!-- Master Price Box -->
+        <div class="prices__box_master box">
+          <h2>Master</h2>
+          <h3><span style="font-size: 28px">$</span>19.99</h3>
+          <hr />
+          <p>500 GB Storage</p>
+          <hr />
+          <p>2 Users Allowed</p>
+          <hr />
+          <p>Send up to 3 GB</p>
+          <hr />
+
+          <button class="learnmore-btn">Learn More</button>
+        </div>
+      </div>
     </div>
     <script type="module" src="/main.js"></script>
   </body>

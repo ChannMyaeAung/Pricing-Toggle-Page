@@ -1,5 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,300;1,400;1,600&display=swap");
 :root {
-  --primary-linearGradient: ();
   --very-lightGrayishBlue: hsl(240, 78%, 98%);
   --light-grayishBlue: hsl(234, 14%, 74%);
   --grayishBlue: hsl(233, 13%, 49%);
@@ -18,6 +18,100 @@
 }
 
 body {
-  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
   font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+  background-color: var(--very-lightGrayishBlue);
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+button {
+  font-family: inherit;
+}
+
+.container {
+  margin: 2rem 0;
+  width: 100%;
+  max-width: 1200px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+}
+
+.container__heading {
+  font-weight: 700;
+}
+
+.toggle-container {
+  margin: 2rem 0 4rem 0;
+}
+
+.box {
+  background-color: #ffffff;
+  padding: 1.5rem;
+  border-radius: 10px;
+  width: 90%;
+  margin: 0 auto;
+  font-weight: 700;
+}
+
+.box h3 {
+  font-size: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 7px;
+  margin-bottom: 1rem;
+}
+
+.box p {
+  font-size: 14px;
+}
+
+hr {
+  border: none;
+  border-top: 1px solid var(--light-grayishBlue);
+}
+
+.prices__box_container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.prices__box_basic,
+.prices__box_professional,
+.prices__box_master {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  width: 90%;
+}
+
+.prices__box_professional {
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: #ffffff;
+}
+
+.learnmore-btn {
+  cursor: pointer;
+  background: linear-gradient(to right, hsl(236, 72%, 79%), hsl(237, 63%, 64%));
+  color: var(--very-lightGrayishBlue);
+  letter-spacing: 1.25px;
+  border: none;
+  font-weight: 700;
+
+  text-transform: uppercase;
+  padding: 0.85rem 1.25rem;
+  border-radius: 5px;
+  margin-top: 1rem;
+}
+
+.professional-btn {
+  background-image: none;
+  background-color: #fff;
+  color: hsl(237, 63%, 64%);
 }
