@@ -47,6 +47,45 @@ button {
 
 .toggle-container {
   margin: 2rem 0 4rem 0;
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+}
+
+.toggle-container label {
+  background-image: linear-gradient(
+    to right,
+    hsl(236, 72%, 79%),
+    hsl(237, 63%, 64%)
+  );
+  border-radius: 50px;
+  position: relative;
+  display: inline-block;
+  top: 1.5px;
+  width: 60px;
+  height: 30px;
+}
+
+.toggle-container label .ball {
+  border-radius: 50%;
+  height: 25px;
+  width: 25px;
+  background-color: white;
+  position: absolute;
+  top: 2.5px;
+  left: 2.5px;
+  transition: all 0.3s ease-in-out;
+}
+
+.toggle-container input {
+  position: absolute;
+  left: -9999px;
+}
+
+.toggle-container input:checked + label .ball {
+  transform: translateX(30px);
 }
 
 .box {
@@ -56,6 +95,7 @@ button {
   width: 90%;
   margin: 0 auto;
   font-weight: 700;
+  box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
 }
 
 .box h3 {
@@ -79,7 +119,7 @@ hr {
 .prices__box_container {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 30px;
 }
 
 .prices__box_basic,
@@ -127,4 +167,21 @@ hr {
 
 .show-monthly-price .monthly-price {
   display: block;
+}
+
+@media (min-width: 768px) {
+  .container {
+    height: 100dvh;
+    justify-content: center;
+  }
+
+  .prices__box_container {
+    flex-direction: row;
+    gap: 10px;
+    margin-inline: 15px;
+  }
+
+  .prices__box_professional {
+    transform: scale(1.1, 1.15);
+  }
 }
