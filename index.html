@@ -10,7 +10,13 @@
     <div class="container">
       <h1 class="container__heading">Our Pricing</h1>
 
-      <div class="toggle-container">
+      <div
+        class="toggle-container"
+        role="switch"
+        aria-checked="false"
+        tabindex="0"
+        aria-label="Toggle between Annual and Monthly"
+      >
         <span>Annually</span>
         <span>
           <input type="checkbox" name="toggle" id="toggle" />
@@ -23,7 +29,11 @@
 
       <div class="prices__box_container">
         <!-- Basic Price Box -->
-        <div class="prices__box_basic box">
+        <div
+          class="prices__box_basic box"
+          role="region"
+          aria-labelledby="basic-plan"
+        >
           <h2>Basic</h2>
 
           <div class="price-container">
@@ -42,11 +52,20 @@
           <p>Send up to 3 GB</p>
           <hr />
 
-          <button class="learnmore-btn">Learn More</button>
+          <button
+            class="learnmore-btn"
+            aria-label="Learn more about Basic plan"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- Professional Price Box -->
-        <div class="prices__box_professional box">
+        <div
+          class="prices__box_professional box"
+          role="region"
+          aria-labelledby="professional-plan"
+        >
           <h2>Professional</h2>
 
           <div class="price-container">
@@ -65,11 +84,20 @@
           <p>Send up to 3 GB</p>
           <hr />
 
-          <button class="learnmore-btn professional-btn">Learn More</button>
+          <button
+            class="learnmore-btn professional-btn"
+            aria-label="Learn more about Professional plan"
+          >
+            Learn More
+          </button>
         </div>
 
         <!-- Master Price Box -->
-        <div class="prices__box_master box">
+        <div
+          class="prices__box_master box"
+          role="region"
+          aria-labelledby="master-plan"
+        >
           <h2>Master</h2>
 
           <div class="price-container">
@@ -88,7 +116,12 @@
           <p>Send up to 3 GB</p>
           <hr />
 
-          <button class="learnmore-btn">Learn More</button>
+          <button
+            class="learnmore-btn"
+            aria-label="Learn more about Master plan"
+          >
+            Learn More
+          </button>
         </div>
       </div>
     </div>
